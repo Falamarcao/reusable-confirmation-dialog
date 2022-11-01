@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemate coding challenge - Reusable confirmation dialog</title>
+<body>
+    <div id="dialog-overlay"></div> <!-- Dialog Overlay -->
+    <!-- dialog1 -->
+    <div id="dialog1" class="dialog">
+        <div class="dialog-content">
+            <h1 class="dialog-title">Are you sure you want to continue</h1>
+            <div class="dialog-actions">
+                <button type="button" onClick="">Yes</button>
+                <button type="button" onClick="reusableConfirmationDialog.hide('dialog1')">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <!-- dialog1 -->
+    <h1>Sitemate coding challenge</h1>
+    <h2>Reusable confirmation dialog</h2>
+    <button type="button" onClick="reusableConfirmationDialog.show('dialog1')">Click me</button>
+    
+</head>
+</body>
+</html>
